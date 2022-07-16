@@ -63,7 +63,7 @@ body{
 }
 
 .grid{
-    display: flex;
+    display: grid;
     gap: var(--gap, 1.6rem);
 }
 
@@ -78,7 +78,10 @@ body{
 .no-decoration{
     list-style: none;
     text-decoration: none;
+    color: inherit;
 }
+
+.uppercase{ text-transform: uppercase; }
 
 /* colors */
 
