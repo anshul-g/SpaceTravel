@@ -1,11 +1,9 @@
-/* ------------------- */
-/*         NAV         */
-/* ------------------- */
-
 body{
     background: url("./assets/home/background-home-desktop.jpg");
     line-height: 2;
 }
+
+/* -----NAVIGATION------ */
 
 .nav-container{
     justify-content: space-between;
@@ -16,7 +14,7 @@ body{
 }
 
 .line-style{
-    width: 29.56rem;
+    width: 30rem;
     height: 1px;
     background: hsl(var(--clr-white)/0.1);
 }
@@ -43,32 +41,58 @@ body{
     font-weight: 800;
 }
 
+/* ------HOMEPAGE CONTENT------ */
+
 .home-container{
     margin: 0 auto;
     padding: 0 2rem;
     max-width: 80rem;
-    gap: 8rem;
-    justify-items: end;
+    gap: 12rem;
     margin-top: 35vh;
+    margin-left: 8rem;
+    grid-template-columns: 1fr 2fr;
 }
+
+.primary-heading{
+    margin-bottom: 1.5rem;
+}
+
+.primary-span{
+    display: block;
+    padding-top: 1.5rem;
+}
+
+
+/* -----BUTTON------ */
 
 .large-button{
     font-size: 2rem;
     position: relative;
+    background: hsl(var(--clr-white));
     color: hsl(var(--clr-dark));
     justify-self: center;
     align-self: center;
-    /* margin-bottom: 20%; */
+    padding: 0 3rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.large-button::after{
+.large-button::after {
     content: '';
     position: absolute;
-    border-radius: 50%;
-    padding: 8rem;
-    background-color: hsl(var(--clr-white));
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: hsl( var(--clr-white) / .15);
+    border-radius: 50%;
+    transition: transform 1s ease-in;
 }
+
+.large-button:hover::after,
+.large-button:focus::after {
+    transform: scale(1.75);
+}
+
