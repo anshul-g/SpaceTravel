@@ -1,0 +1,74 @@
+/* ------------------- */
+/*         NAV         */
+/* ------------------- */
+
+body{
+    background: url("./assets/home/background-home-desktop.jpg");
+    line-height: 2;
+}
+
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 3.4rem;
+    margin-top: 2.25rem;
+}
+
+.line-style{
+    width: 29.56rem;
+    height: 1px;
+    background: hsl(var(--clr-white)/0.1);
+}
+
+.nav-blur{
+    background: hsl(var(--clr-white)/0.1);
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0%;
+}
+
+.nav-list{
+    gap: 3rem;
+    margin-right: 8.8rem;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    gap: 0.75rem;
+}
+
+.nav-link > span{
+    font-weight: 800;
+}
+
+.home-container{
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 80rem;
+    gap: 8rem;
+    justify-items: end;
+    margin-top: 35vh;
+}
+
+.large-button{
+    font-size: 2rem;
+    position: relative;
+    color: hsl(var(--clr-dark));
+    justify-self: center;
+    align-self: center;
+    /* margin-bottom: 20%; */
+}
+
+.large-button::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    padding: 8rem;
+    background-color: hsl(var(--clr-white));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
