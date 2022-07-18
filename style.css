@@ -62,7 +62,7 @@ body{
     padding: 0 2rem;
     max-width: 80rem;
     gap: 12rem;
-    margin-top: 35vh;
+    margin-top: 25vh;
     padding-left: 4rem;
     grid-template-columns: 1fr 2fr;
 }
@@ -112,13 +112,14 @@ body{
 
 /* ------DESTINATION CONTENT------ */
 
-#destination{
+#destination{ 
+    padding: 4rem;
     padding-top: 2rem;
 }
 
 .numbered-heading{
     font-size: 2rem;
-    margin: 1.5rem 0 0 1.2rem;
+    margin: 1.5rem 0 4rem 1.2rem;
 }
 
 .numbered-heading span{
@@ -129,7 +130,6 @@ body{
 .destination-content{
     --underline-gap: 0.6rem;
     gap: 3rem;
-    padding: 4rem;
     margin-top: 2rem;
 }
 
@@ -144,6 +144,7 @@ body{
 
 .destination-name{
     font-size: 6.5rem;
+    font-weight: 600;
     line-height: 6.4rem;
 }
 
