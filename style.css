@@ -110,3 +110,51 @@ body{
     transform: scale(1.75);
 }
 
+/* ------DESTINATION CONTENT------ */
+
+#destination{
+    padding-top: 2rem;
+}
+
+.numbered-heading{
+    font-size: 2rem;
+    margin: 1.5rem 0 0 1.2rem;
+}
+
+.numbered-heading span{
+    font-weight: 800;
+    margin-right: 1rem;
+}
+
+.destination-content{
+    --underline-gap: 0.6rem;
+    gap: 3rem;
+    padding: 4rem;
+    margin-top: 2rem;
+}
+
+.destination-image{
+    justify-self: center;
+    align-self: center;
+}
+
+.destination-right{
+    flex-direction: column;
+}
+
+.destination-name{
+    font-size: 6.5rem;
+    line-height: 6.4rem;
+}
+
+.journey-details span{
+    display: block;
+}
+
+.line-style{
+    margin: 1.2rem 0;
+}
+
+.journey-num{
+    font-size: 1.5rem;
+}
