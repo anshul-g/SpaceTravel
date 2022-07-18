@@ -67,6 +67,12 @@ body{
     gap: var(--gap, 1.6rem);
 }
 
+.container{
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 80rem;
+}
+
 .two-cols{
     grid-template-columns: 1fr 1fr;
 }
