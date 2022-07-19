@@ -1,6 +1,18 @@
-body{
+#home-body{
     background: url("./assets/home/background-home-desktop-plus.jpg");
     line-height: 2;
+}
+
+#destination-body{
+   background: url("./assets/destination/background-destination-desktop.jpg");
+}
+
+#crew-body{
+    background: url("./assets/crew/background-crew-desktop.jpg");
+}
+
+#technology-body{
+    background: url("./assets/technology/background-technology-desktop.jpg");
 }
 
 /* -----NAVIGATION------ */
