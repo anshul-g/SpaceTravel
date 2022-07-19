@@ -135,7 +135,7 @@ body{
 
 .numbered-heading{
     font-size: 2rem;
-    margin: 1.5rem 0 4rem 1.2rem;
+    margin: 1.5rem 0 6rem 1.2rem;
 }
 
 .numbered-heading span{
@@ -236,4 +236,38 @@ body{
 
 .dot-indicators > *[aria-selected="false"]{
     background:hsl( var(--clr-light)/0.75);
+}
+
+/* ------TECH CONTENT------ */
+.tech-name span{
+    display: block;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.small-buttons{
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.small-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.small-buttons > *[aria-selected="true"]{
+    color: black;
+    background:hsl( var(--clr-white));
+}
+
+.small-buttons > *[aria-selected="false"]{
+    background:hsl( var(--clr-black));
+    border: 0.01px hsl(var(--clr-white)) solid;
 }
