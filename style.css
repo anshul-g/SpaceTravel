@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 #home-body{
     background: url("./assets/home/background-home-desktop-plus.jpg");
     line-height: 2;
@@ -8,7 +12,7 @@
 }
 
 #crew-body{
-    background: url("./assets/crew/background-crew-desktop.jpg");
+    background: url("./assets/crew/background-crew-desktop-plus.jpg");
 }
 
 #technology-body{
@@ -170,4 +174,66 @@
 
 .journey-num{
     font-size: 1.5rem;
+}
+
+/* ------CREW CONTENT------ */
+#crew{
+    padding: 4rem;
+    padding-top: 2rem;
+    gap: 4rem;
+}
+
+.crew-left > .numbered-heading{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.crew-left{
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+}
+
+.commander-name{
+    font-size: 2rem;
+}
+
+.commander-name span{
+    display: block;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.commander-info{
+    line-height: 1.8;
+}
+
+.crew-right{
+    padding-top: 6rem;
+    padding-left: 4rem;
+}
+
+.crew-img{
+    width: 85%;
+}
+
+.dot-indicators{
+    gap: 1.3rem;
+}
+
+.dot-indicators > *{
+    cursor: pointer;
+    width: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 50%;
+}
+
+.dot-indicators > *[aria-selected="true"]{
+    background:hsl( var(--clr-white));
+}
+
+.dot-indicators > *[aria-selected="false"]{
+    background:hsl( var(--clr-light)/0.75);
 }
