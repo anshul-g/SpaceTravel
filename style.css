@@ -79,7 +79,7 @@ body{
     max-width: 80rem;
     gap: 12rem;
     margin-top: 25vh;
-    padding-left: 8rem;
+    padding-left: 5rem;
     grid-template-columns: 1fr 1fr;
 }
 
