@@ -3,20 +3,20 @@ body{
 }
 
 #home-body{
-    background: url("./assets/home/background-home-desktop-plus.jpg");
+    background:hsl(var(--clr-dark)) url("./assets/home/background-home-desktop-plus.jpg");
     line-height: 2;
 }
 
 #destination-body{
-   background: url("./assets/destination/background-destination-desktop-plus.jpg");
+   background: hsl(var(--clr-dark)) url("./assets/destination/background-destination-desktop-plus.jpg");
 }
 
 #crew-body{
-    background: url("./assets/crew/background-crew-desktop-plus.jpg");
+    background:hsl(var(--clr-dark)) url("./assets/crew/background-crew-desktop-plus.jpg");
 }
 
 #technology-body{
-    background: url("./assets/technology/background-technology-desktop-plus.jpg");
+    background:hsl(var(--clr-dark)) url("./assets/technology/background-technology-desktop-plus.jpg");
 }
 
 /* -----NAVIGATION------ */
