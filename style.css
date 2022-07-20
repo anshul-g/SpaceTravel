@@ -148,6 +148,11 @@ body{
     gap: 3rem;
     margin-top: 2rem;
 }
+.destination-info{
+    padding-right: 6rem;
+    margin: 2.5rem 0;
+    line-height: 1.8;
+}
 
 .destination-image{
     justify-self: center;
@@ -169,7 +174,7 @@ body{
 }
 
 .line-style{
-    margin: 1.2rem 0;
+    margin-bottom: 2.5rem;
 }
 
 .journey-num{
