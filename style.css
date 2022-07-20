@@ -77,9 +77,9 @@ body{
     margin: 0 auto;
     padding: 0 2rem;
     max-width: 80rem;
-    gap: 12rem;
+    gap: 1rem;
     margin-top: 25vh;
-    padding-left: 5rem;
+    padding-left: 8rem;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -157,6 +157,7 @@ body{
 .destination-image{
     justify-self: center;
     align-self: center;
+
 }
 
 .destination-right{
@@ -257,9 +258,9 @@ body{
 }
 
 .tech-container{
-    --gap: 1rem;
+    column-gap: 5rem;
     grid-template-rows: 1vh 80vh;
-    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .tech-name span{
@@ -273,12 +274,12 @@ body{
     align-self: center;
     padding-left: 1rem;
     padding-right: 4rem;
-    gap: 5rem;
+    gap: 2.5rem;
 }
 
 .tech-info{
     line-height: 1.8;
-    padding-right: 4rem;
+    padding-right: 6rem;
 }
 
 .tech-right{
@@ -286,8 +287,8 @@ body{
     align-self: center;
 }
 
-.tech-image{
-    width: 70%;
+.tech-img{
+    width: 100%;
 }
 
 .small-buttons{

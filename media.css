@@ -1,0 +1,55 @@
+/* Laptops 1440px */
+@media(max-width: 90rem){
+    #home-body{
+        background:hsl(var(--clr-dark)) url("./assets/home/background-home-desktop.jpg");
+        line-height: 2;
+    }
+    
+    #destination-body{
+       background: hsl(var(--clr-dark)) url("./assets/destination/background-destination-desktop.jpg");
+    }
+    
+    #crew-body{
+        background:hsl(var(--clr-dark)) url("./assets/crew/background-crew-desktop.jpg");
+    }
+    
+    #technology-body{
+        background:hsl(var(--clr-dark)) url("./assets/technology/background-technology-desktop.jpg");
+    }
+
+    .numbered-heading{
+        font-size: 2rem;
+        margin: 1.8rem 0 4rem 1.2rem;
+    }
+
+    .tech-container{
+        column-gap: 2rem;
+    }
+
+    .tech-left{
+        padding-right: 1rem;
+    }
+
+    #tech{
+        padding: 4rem 2rem;
+    }
+
+    #crew{
+        padding: 2rem;
+        gap: 0rem;
+    }
+
+    .crew-img{
+        width: 100%;
+    }
+
+    .crew-left{
+        padding-left: 3rem;
+    }
+}
+
+/* Tablets 1080px */
+@media(max-width: 80rem){
+
+}
+
