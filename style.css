@@ -239,23 +239,29 @@ body{
 
 /* ------TECH CONTENT------ */
 #tech{
-    padding-left: 8rem;
+    padding: 4rem;
 }
 
-#tech .numbered-heading{
-    padding-top: 2rem;
-    margin-bottom: 4rem;
+.tech-heading{
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+.tech-heading .numbered-heading{
+    margin-top: 0;
 }
 
 .tech-container{
-    --gap: 0rem;
+    --gap: 1rem;
+    grid-template-rows: 1vh 80vh;
     grid-template-columns: 2.5fr 1.5fr;
 }
 
 .tech-name span{
     display: block;
     font-size: 3.5rem;
-    line-height: 1.5;
+    line-height: 1.2;
+    margin: 1rem 0;
 }
 
 .tech-left{
@@ -272,6 +278,7 @@ body{
 
 .tech-right{
     justify-self: end;
+    align-self: center;
 }
 
 .tech-image{
