@@ -79,8 +79,8 @@ body{
     max-width: 80rem;
     gap: 12rem;
     margin-top: 25vh;
-    padding-left: 4rem;
-    grid-template-columns: 1fr 2fr;
+    padding-left: 8rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .primary-heading{
@@ -135,7 +135,7 @@ body{
 
 .numbered-heading{
     font-size: 2rem;
-    margin: 1.5rem 0 6rem 1.2rem;
+    margin: 2.5rem 0 6rem 1.2rem;
 }
 
 .numbered-heading span{
@@ -239,10 +239,44 @@ body{
 }
 
 /* ------TECH CONTENT------ */
+#tech{
+    padding-left: 8rem;
+}
+
+#tech .numbered-heading{
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.tech-container{
+    --gap: 0rem;
+    grid-template-columns: 2.5fr 1.5fr;
+}
+
 .tech-name span{
     display: block;
     font-size: 3.5rem;
     line-height: 1.5;
+}
+
+.tech-left{
+    align-self: center;
+    padding-left: 1rem;
+    padding-right: 4rem;
+    gap: 5rem;
+}
+
+.tech-info{
+    line-height: 1.8;
+    padding-right: 4rem;
+}
+
+.tech-right{
+    justify-self: end;
+}
+
+.tech-image{
+    width: 70%;
 }
 
 .small-buttons{
