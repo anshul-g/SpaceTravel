@@ -16,6 +16,7 @@
 />
   
   <title>Space tourism website</title>
+  <script src="script.js" defer></script>
 </head>
 <body id="technology-body">
 
@@ -23,9 +24,7 @@
     <img src=".\assets\shared\logo.svg" class="logo" />
     <div class="line-style"></div>
     <div class="nav">
-      <ul
-        class="nav-list underline-indicators ff-sans-cond flex no-decoration"
-      >
+      <ul class="nav-list underline-indicators ff-sans-cond flex no-decoration">
         <li><a href="index.html" class="nav-link no-decoration flex"><span>00</span> Home</a></li>
         <li><a href="destination.html" class="nav-link no-decoration flex"><span>01</span> Destination</a></li>
         <li><a href="crew.html" class="nav-link no-decoration flex"><span>02</span> Crew</a></li>
@@ -42,13 +41,13 @@
     <div class="tech-container grid two-cols">
       <div class="tech-left flex">
         <div class="small-buttons ff-serif flex">
-          <div class="small-button" aria-selected="true">1</div>
-          <div class="small-button" aria-selected="false">2</div>
-          <div class="small-button" aria-selected="false">3</div>
+          <div class="small-button" aria-selected="true" data-tab-value="space-capsule">1</div>
+          <div class="small-button" aria-selected="false" data-tab-value="spaceport">2</div>
+          <div class="small-button" aria-selected="false" data-tab-value="launch-vehicle">3</div>
         </div>
 
-        <!-- Space Capsule-->
-        <article>
+        <!-- Space Capsule -->
+        <article data-tab="space-capsule">
           <h2 class="tech-name uppercase text-accent ff-sans-cond fs-700">The terminology...
           <span class="text-white ff-serif">Space capsule</span></h2>
 
@@ -58,8 +57,8 @@
           and plenty of other activities to keep you entertained.</p>
         </article>
 
-        <!-- Space Capsule-->
-        <article hidden>
+        <!-- Spaceport -->
+        <article data-tab="spaceport" hidden>
           <h2 class="tech-name uppercase text-accent ff-sans-cond fs-700">The terminology...
           <span class="text-white ff-serif">Spaceport</span></h2>
 
@@ -69,8 +68,8 @@
             of the Earth’s rotation for launch.</p>
         </article>
 
-        <!-- Space Capsule-->
-        <article hidden>
+        <!-- Launch Vehicle -->
+        <article data-tab="launch-vehicle" hidden>
           <h2 class="tech-name uppercase text-accent ff-sans-cond fs-700">The terminology...
           <span class="text-white ff-serif">Launch Vehicle</span></h2>
 
@@ -82,9 +81,9 @@
       </div>
 
       <div class="tech-right">
-        <img class="tech-img tab-one" src=".\assets\technology\image-launch-vehicle-portrait.jpg">
-        <img class="tech-img tab-two" src=".\assets\technology\image-launch-vehicle-portrait.jpg" hidden>
-        <img class="tech-img tab-three" src=".\assets\technology\image-launch-vehicle-portrait.jpg" hidden>
+        <img class="tech-img" data-tab="space-capsule" src=".\assets\technology\image-space-capsule-portrait.jpg">
+        <img class="tech-img" data-tab="spaceport" src=".\assets\technology\image-spaceport-portrait.jpg" hidden>
+        <img class="tech-img" data-tab="launch-vehicle" src=".\assets\technology\image-launch-vehicle-portrait.jpg" hidden>
       </div>
     </div>
   </section>

@@ -21,6 +21,7 @@
     />
 
     <title>Space tourism website</title>
+    <script src="script.js" defer></script>
   </head>
 
   <body id="destination-body">
@@ -45,38 +46,133 @@
       </h1>
       <div class="destination-content grid two-cols">
         <img
+          data-tab = "moon"
           src=".\assets\destination\image-moon.webp"
           class="destination-image"
         />
 
+        <img
+          data-tab = "mars"
+          src=".\assets\destination\image-mars.webp"
+          class="destination-image"
+          hidden
+        />
+
+        <img
+          data-tab = "europa"
+          src=".\assets\destination\image-europa.webp"
+          class="destination-image"
+          hidden
+        />
+
+        <img
+          data-tab = "titan"
+          src=".\assets\destination\image-titan.webp"
+          class="destination-image"
+          hidden
+        />
+
         <div class="destination-right flex">
           <ul class="nav-list underline-indicators ff-sans-cond flex no-decoration">
-            <li class="active"><a href="#" class="nav-link no-decoration">Moon</a></li>
-            <li><a href="#" class="nav-link no-decoration">Mars</a></li>
-            <li><a href="#" class="nav-link no-decoration">Europa</a></li>
-            <li><a href="#" class="nav-link no-decoration">Titan</a></li>
+            <li class="active"><a href="#" class="nav-link no-decoration"  data-tab-value="moon">Moon</a></li>
+            <li><a href="#" class="nav-link no-decoration" data-tab-value="mars">Mars</a></li>
+            <li><a href="#" class="nav-link no-decoration" data-tab-value="europa">Europa</a></li>
+            <li><a href="#" class="nav-link no-decoration" data-tab-value="titan">Titan</a></li>
           </ul>
+          
+          <!-- MOON -->
+          <article data-tab="moon">
+            <h2 class="destination-name uppercase ff-serif text-white">Moon</h2>
+            <p class="destination-info ff-sans">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
 
-          <h2 class="destination-name uppercase ff-serif text-white">Moon</h2>
-          <p class="destination-info ff-sans">
-            See our planet as you’ve never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed.
-            While you’re there, take in some history by visiting the Luna 2
-            and Apollo 11 landing sites.
-          </p>
+            <div class="line-style"></div>
 
-          <div class="line-style"></div>
-
-          <div class="journey-details flex">
-            <div>
-              <span class="text-accent ff-sans-cond fs-400 uppercase">Avg. distance</span>
-              <span class="journey-num ff-serif uppercase text-white">384,400 km</span>
+            <div class="journey-details flex">
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Avg. distance</span>
+                <span class="journey-num ff-serif uppercase text-white">384,400 km</span>
+              </div>
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Est. travel time</span>
+                <span class="journey-num ff-serif uppercase text-white">3 days</span>
+              </div>
             </div>
-            <div>
-              <span class="text-accent ff-sans-cond fs-400 uppercase">Est. travel time</span>
-              <span class="journey-num ff-serif uppercase text-white">3 days</span>
+          </article>
+
+          <!-- MARS -->
+          <article data-tab="mars" hidden>
+            <h2 class="destination-name uppercase ff-serif text-white">Mars</h2>
+            <p class="destination-info ff-sans">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+              the tallest planetary mountain in our solar system. It’s two and a half times 
+              the size of Everest!
+            </p>
+
+            <div class="line-style"></div>
+
+            <div class="journey-details flex">
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Avg. distance</span>
+                <span class="journey-num ff-serif uppercase text-white">225 mil. km</span>
+              </div>
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Est. travel time</span>
+                <span class="journey-num ff-serif uppercase text-white">9 months</span>
+              </div>
             </div>
-          </div>
+          </article>
+
+           <!-- EUROPA -->
+           <article data-tab="europa" hidden>
+            <h2 class="destination-name uppercase ff-serif text-white">Europa</h2>
+            <p class="destination-info ff-sans">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+              winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+              ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+            </p>
+
+            <div class="line-style"></div>
+
+            <div class="journey-details flex">
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Avg. distance</span>
+                <span class="journey-num ff-serif uppercase text-white">628 mil. km</span>
+              </div>
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Est. travel time</span>
+                <span class="journey-num ff-serif uppercase text-white">3 years</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- TITAN -->
+          <article data-tab="titan" hidden>
+            <h2 class="destination-name uppercase ff-serif text-white">Titan</h2>
+            <p class="destination-info ff-sans">
+              The only moon known to have a dense atmosphere other than Earth, Titan 
+              is a home away from home (just a few hundred degrees colder!). As a 
+              bonus, you get striking views of the Rings of Saturn.
+            </p>
+
+            <div class="line-style"></div>
+
+            <div class="journey-details flex">
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Avg. distance</span>
+                <span class="journey-num ff-serif uppercase text-white">1.6 bil. km</span>
+              </div>
+              <div>
+                <span class="text-accent ff-sans-cond fs-400 uppercase">Est. travel time</span>
+                <span class="journey-num ff-serif uppercase text-white">7 years</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
