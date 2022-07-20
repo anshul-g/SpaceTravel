@@ -181,6 +181,8 @@ body{
     padding: 4rem;
     padding-top: 2rem;
     gap: 4rem;
+    grid-template-rows: 80vh;
+    justify-items: center;
 }
 
 .crew-left > .numbered-heading{
@@ -204,6 +206,7 @@ body{
     display: block;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 .commander-info{
@@ -213,10 +216,6 @@ body{
 .crew-right{
     padding-top: 6rem;
     padding-left: 4rem;
-}
-
-.crew-img{
-    width: 85%;
 }
 
 .dot-indicators{
