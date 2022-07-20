@@ -8,7 +8,7 @@ body{
 }
 
 #destination-body{
-   background: url("./assets/destination/background-destination-desktop.jpg");
+   background: url("./assets/destination/background-destination-desktop-plus.jpg");
 }
 
 #crew-body{
@@ -16,7 +16,7 @@ body{
 }
 
 #technology-body{
-    background: url("./assets/technology/background-technology-desktop.jpg");
+    background: url("./assets/technology/background-technology-desktop-plus.jpg");
 }
 
 /* -----NAVIGATION------ */
