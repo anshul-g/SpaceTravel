@@ -30,7 +30,8 @@ body{
 
 .nav{
     background: hsl( var(--clr-white) / 0.1);
-    backdrop-filter: blur(2.5rem);
+    backdrop-filter: blur(0.5rem);
+    -moz-backdrop-filter: blur(1px);
     padding: 0rem 16rem 0 8rem;
 }
 
@@ -70,6 +71,19 @@ body{
     color: hsl( var(--clr-white) / 1);
     border-color: hsl( var(--clr-white) / 1); 
 }
+
+.menu{
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+
+.menu-close{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+}
+
 
 /* ------HOMEPAGE CONTENT------ */
 

@@ -43,16 +43,32 @@ tabValues.forEach(tab => {
 })
 
 // Changing to landscape images on tech page
-const currentWidth = window.innerWidth;
-const targetImage = document.querySelector(".mobile");
-const tabletScreenSize = 810;
+// const currentWidth = window.innerWidth;
+// const targetImage = document.querySelector(".mobile");
+// const tabletScreenSize = 810;
 
-function changeImage(){
-    if(currentWidth <= tabletScreenSize){
-        targetImage.style.display = "block";
-    } else{
-        targetImage.style.display = "none";
-    }
-}
+// function changeImage(){
+//     if(currentWidth <= tabletScreenSize){
+//         targetImage.style.display = "block";
+//     } else{
+//         targetImage.style.display = "none";
+//     }
+// }
 
-changeImage();
+// changeImage();
+
+//Mobile navigation
+const btnMenuOpen = document.querySelector(".menu-open");
+const btnMenuClose = document.querySelector(".menu-close");
+const navEl = document.querySelector(".nav");
+
+btnMenuOpen.addEventListener("click", function() {
+    btnMenuOpen.classList.toggle("nav-open");
+    navEl.classList.toggle("mobile-nav-open");
+})
+
+btnMenuClose.addEventListener("click", function(){
+    navEl.classList.toggle("mobile-nav-open");
+    console.log(1);
+})
+

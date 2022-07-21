@@ -199,3 +199,48 @@
     }
 }
 
+/* PHONES 630px */
+@media(max-width: 39.375em){
+    html{
+        font-size: 62.5%;
+    }
+
+    .nav-container{
+        padding: 2rem 4rem;
+    }
+
+    #navbar .nav{
+        transform: translateX(100%);
+        transition: all 0.5s;
+        z-index: 1;
+        font-size: 2rem;
+        position:fixed;
+        inset: 0 0 0 20%;
+        background: hsl( var(--clr-white)/0.05);
+        padding: 8rem 0 0 3rem;
+        backdrop-filter: blur(1rem);
+        -moz-backdrop-filter: blur(1rem);
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    #navbar .nav-list{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    #navbar .nav.mobile-nav-open{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+        transform: translateX(0);
+    }
+
+    .underline-indicators > *{
+        border: none;
+        padding: 0;
+    }
+    
+}
