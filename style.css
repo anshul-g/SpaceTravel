@@ -73,8 +73,9 @@ body{
 }
 
 .menu{
+    display: none;
     border: none;
-    background: inherit;
+    background: none;
     cursor: pointer;
 }
 
