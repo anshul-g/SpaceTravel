@@ -41,3 +41,18 @@ tabValues.forEach(tab => {
         tab.setAttribute("aria-selected", "true");
     })
 })
+
+// Changing to landscape images on tech page
+const currentWidth = window.innerWidth;
+const targetImage = document.querySelector(".mobile");
+const tabletScreenSize = 810;
+
+function changeImage(){
+    if(currentWidth <= tabletScreenSize){
+        targetImage.style.display = "block";
+    } else{
+        targetImage.style.display = "none";
+    }
+}
+
+changeImage();

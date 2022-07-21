@@ -80,7 +80,6 @@ body{
     gap: 1rem;
     margin-top: 25vh;
     padding-left: 8rem;
-    grid-template-columns: 1fr 1fr;
 }
 
 .primary-heading{
@@ -183,24 +182,29 @@ body{
 }
 
 /* ------CREW CONTENT------ */
+
 #crew{
     padding: 4rem;
     padding-top: 2rem;
     gap: 4rem;
-    grid-template-rows: 80vh;
+    grid-template-rows: auto 65vh;
     justify-items: center;
 }
 
-.crew-left > .numbered-heading{
+#crew > .numbered-heading{
+    justify-self: start;
+    grid-column: 1/-1;
+    grid-row: 1;
     margin-left: 0;
     margin-bottom: 0;
 }
 
 .crew-left{
+    align-self: center;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
     padding-bottom: 4rem;
 }
 
@@ -220,8 +224,11 @@ body{
 }
 
 .crew-right{
-    padding-top: 6rem;
     padding-left: 4rem;
+}
+
+.crew-img{
+    width: 100%;
 }
 
 .dot-indicators{
@@ -244,6 +251,7 @@ body{
 }
 
 /* ------TECH CONTENT------ */
+
 #tech{
     padding: 4rem;
 }

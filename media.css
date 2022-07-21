@@ -37,6 +37,7 @@
     #crew{
         padding: 4rem;
         gap: 0rem;
+        align-items: center;
     }
 
     .crew-img{
@@ -52,8 +53,149 @@
     }
 }
 
-/* Tablets 1080px */
-@media(max-width: 80rem){
+/* Tablets 834x1194 */
+@media(max-width: 52.125em){
+    body{
+        overflow: scroll;
+    }
 
+    .two-cols{
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hidden-sm {
+        display: none !important; 
+    }
+
+    .show-sm {
+        display: block !important; 
+    }
+
+    /* NAVIGATION */
+    header .line-style{
+        display: none;
+    }
+
+    .nav{
+        padding: 0 2rem;
+    }
+    
+    /* HOME */
+    .home-container{
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 5rem 8rem;
+        padding-bottom: 0;
+        gap: 4rem;
+    }
+
+    .home-text{
+        justify-self: center;
+        align-self: center;
+    }
+    .primary-span{
+        font-size: 9rem;
+        font-weight : 500
+    }
+
+    /* DESTINATION */
+    .numbered-heading{
+        margin: 1rem;
+    }
+
+    .destination-content{
+        margin-top: 0rem;
+    }
+
+    .destination-image{
+        width: 50%;
+    }
+
+    .destination-right{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destination-right .line-style{
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .destination-info{
+        padding: 0 2rem;
+        margin: 1rem 0;
+    }
+
+    .journey-details{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* CREW */
+    #crew{
+        padding-top: 2rem;
+        padding-bottom: 0;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+
+    .crew-left{
+        /* padding: 0 4rem; */
+        margin: 2rem 0;
+        padding: 0 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew-right{
+        padding: 0;
+        text-align: center;
+    }
+
+    .crew-img{
+        width: 65%;
+    }
+
+    /* TECH */
+    #tech{
+        padding: 4rem 0;
+    }
+
+    .tech-container{
+        grid-template-rows: auto auto 1fr;
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .tech-container .numbered-heading{
+        margin-top: -1rem;
+        margin-left: 4rem;
+    }
+
+    .tech-left{
+        grid-row: 3;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 4rem;
+    }
+
+    .tech-right{
+        justify-self: stretch;
+    }
+    
+    .tech-info{
+        padding: 0;
+    }
+
+    .small-buttons{
+        flex-direction: row;
+    }
 }
 
