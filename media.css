@@ -31,11 +31,11 @@
     }
 
     #tech{
-        padding: 4rem 2rem;
+        padding: 4rem 4rem;
     }
 
     #crew{
-        padding: 2rem;
+        padding: 4rem;
         gap: 0rem;
     }
 
@@ -45,6 +45,10 @@
 
     .crew-left{
         padding-left: 3rem;
+    }
+
+    .crew-left .numbered-heading{
+        margin-top: 0;
     }
 }
 

@@ -174,7 +174,7 @@ body{
     display: block;
 }
 
-.line-style{
+.destination-right .line-style{
     margin-bottom: 2.5rem;
 }
 
@@ -274,7 +274,7 @@ body{
     align-self: center;
     padding-left: 1rem;
     padding-right: 4rem;
-    gap: 2.5rem;
+    gap: 3.5rem;
 }
 
 .tech-info{
