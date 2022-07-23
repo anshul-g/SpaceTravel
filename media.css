@@ -187,6 +187,10 @@
     }
 
     /* TECH */
+    .mobile{
+        display: block;
+    }
+
     #tech{
         padding: 4rem 0;
     }
@@ -394,5 +398,12 @@
 @media(max-width: 24.875em){
     html{
         font-size: 62.5%;
+    }
+}
+
+/* HIDING LANDSCAPE IMAGES FOR BIGGER SCREEN SIZES */
+@media(min-width: 52.125em){
+    .hidden-pc{
+        display: none;
     }
 }
