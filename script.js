@@ -61,14 +61,7 @@ tabValues.forEach(tab => {
 const btnMenuOpen = document.querySelector(".menu-open");
 const btnMenuClose = document.querySelector(".menu-close");
 const navEl = document.querySelector(".nav");
-const navLinks = document.querySelectorAll(".primary");
-// console.log(primary);
 
-navLinks.forEach( link => {
-    link.addEventListener("click", function(){
-        navEl.classList.remove("mobile-nav-open");
-    })
-})
 
 btnMenuOpen.addEventListener("click", function() {
     btnMenuClose.classList.toggle("mobile-nav-open");
@@ -79,4 +72,5 @@ btnMenuClose.addEventListener("click", function(){
     // btnMenuClose.classList.toggle("mobile-nav-open");
     navEl.classList.toggle("mobile-nav-open");
 })
+
 
