@@ -132,12 +132,12 @@ body{
     height: 100%;
     background: hsl( var(--clr-white) / .15);
     border-radius: 50%;
-    transition: transform 1s ease-in;
+    transition: transform 0.5s ease-in;
 }
 
 .large-button:hover::after,
 .large-button:focus::after {
-    transform: scale(1.75);
+    transform: scale(1.5);
 }
 
 /* ------DESTINATION CONTENT------ */
